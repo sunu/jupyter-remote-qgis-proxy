@@ -1,0 +1,14 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.36.2-Maidenhead">
+  <layer-tree-group>
+    <layer-tree-layer id="{layer_id}" source="{layer_src}">
+    </layer-tree-layer>
+  </layer-tree-group>
+  <projectlayers>
+    <maplayer type="vector">
+      <id>{layer_id}</id>
+      <datasource>{layer_src}</datasource>
+      <layername>{layer_name}</layername>
+    </maplayer>
+  </projectlayers>
+</qgis>
