@@ -2,7 +2,7 @@
 
 Run QGIS inside a remote Desktop on Jupyter and open remote data sources.
 
-This is based on [jupyter-remote-desktop-proxy](https://github.com/jupyter/jupyter-remote-desktop-proxy).
+This is based on [jupyter-remote-desktop-proxy](https://github.com/jupyterhub/jupyter-remote-desktop-proxy).
 
 ## Usage
 
