@@ -28,4 +28,4 @@ def open_qgis(action="add_vector_layer", **kwargs):
         }
         project_file_content = action_template.format(**layer_args)
         f.write(project_file_content)
-    subprocess.Popen(["qgis", "--nologo", "--project", file_path, "--code", zoom_script_path, "--code", maximize_script_path])
+    subprocess.Popen(["qgis", "--nologo", "--project", file_path, "--code", zoom_script_path])

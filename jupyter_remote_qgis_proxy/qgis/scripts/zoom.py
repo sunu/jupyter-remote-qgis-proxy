@@ -5,6 +5,7 @@ import qgis.utils
 
 # Get the QGIS interface
 iface = qgis.utils.iface
+iface.mainWindow().showMaximized()
 
 # Get the active map canvas
 canvas = iface.mapCanvas()
