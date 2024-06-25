@@ -39,7 +39,7 @@ target_version = [
 # ref: https://github.com/your-tools/tbump#readme
 #
 [tool.tbump]
-github_url = "https://github.com/sunu/jupyter-remote-qgis-proxy"
+github_url = "https://github.com/jupyterhub/jupyter-remote-desktop-proxy"
 
 [tool.tbump.version]
 current = "2.0.1.dev"

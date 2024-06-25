@@ -2,7 +2,7 @@ from jupyter_remote_desktop_proxy.handlers import DesktopHandler
 from tornado import web
 from tornado.ioloop import IOLoop
 
-from .utils import is_process_running, start_qgis
+from .utils import start_qgis
 
 
 class QgisHandler(DesktopHandler):
@@ -14,7 +14,9 @@ class QgisHandler(DesktopHandler):
         project_name = self.get_argument("project_name", "new project")
         layer_name = self.get_argument("layer_name", "Vector Layer")
 
-        if not is_process_running("websockify"):
-            IOLoop.current().call_later(3, lambda:start_qgis(action, url, project_name, layer_name))
-        
-
+        IOLoop.current().call_later(
+            delay=3,
+            callback=lambda: start_qgis(
+                action=action, url=url, project_name=project_name, layer_name=layer_name
+            ),
+        )
