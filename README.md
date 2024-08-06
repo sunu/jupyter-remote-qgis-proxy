@@ -6,14 +6,13 @@ This is based on [jupyter-remote-desktop-proxy](https://github.com/jupyterhub/ju
 
 ## Usage
 
-For now, use this as part of [nasa-qgis-image](https://github.com/sunu/nasa-qgis-image/tree/qgis-proxy). To run locally:
+Jupyter Remote QGIS Proxy can be used through [nasa-qgis-image](https://github.com/2i2c-org/nasa-qgis-image). To run locally:
 
-1. Clone the repository and checkout the `qgis-proxy` branch:
+1. Clone the repository:
 
     ```bash
-    git clone git@github.com:sunu/nasa-qgis-image.git
+    git clone git@github.com:2i2c-org/nasa-qgis-image.git
     cd nasa-qgis-image
-    git checkout qgis-proxy
     ```
 2. Build the image:
 
