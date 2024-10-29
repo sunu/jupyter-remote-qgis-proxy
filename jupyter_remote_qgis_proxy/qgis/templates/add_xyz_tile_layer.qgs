@@ -1,0 +1,18 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.36.2-Maidenhead">
+  <layer-tree-group>
+    <layer-tree-layer patch_size="-1,-1" source="{layer_src}" checked="Qt::Checked" expanded="1" name="{layer_name}" legend_exp="" legend_split_behavior="0" id="{layer_id}">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <projectlayers>
+    <maplayer legendPlaceholderImage="" autoRefreshTime="0" maxScale="0" autoRefreshEnabled="0" type="raster" minScale="1e+08" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories">
+      <id>{layer_id}</id>
+      <datasource>"{layer_src}"</datasource>
+      <layername>{layer_name}</layername>
+      <provider>wms</provider>
+    </maplayer>
+  </projectlayers>
+</qgis>
