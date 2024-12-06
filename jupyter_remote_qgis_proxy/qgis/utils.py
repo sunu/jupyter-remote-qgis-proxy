@@ -31,9 +31,7 @@ def open_qgis(action="add_vector_layer", **kwargs):
     file_path = f"/tmp/{project_name}.qgs"
     with open(file_path, "w") as f:
         if action == "add_xyz_tile_layer":
-            logger.info("Logging from open_qgis")
-            logger.info(kwargs['url'])
-            print(kwargs['url'])
+            logger.info(f"XYZ Tile Layer URL: {kwargs['url']}")
 
             url = kwargs["url"]
             url_parts = url.split("?")
