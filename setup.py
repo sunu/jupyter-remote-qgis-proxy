@@ -1,9 +1,6 @@
 import os
-from subprocess import check_call
 
 from setuptools import find_packages, setup
-from setuptools.command.build_py import build_py
-from setuptools.command.sdist import sdist
 
 HERE = os.path.dirname(__file__)
 
@@ -46,21 +43,17 @@ setup(
     data_files=[
         (
             'etc/jupyter/jupyter_server_config.d',
-            [
-                'jupyter-config/jupyter_server_config.d/jupyter_remote_qgis_proxy.json'
-            ],
+            ['jupyter-config/jupyter_server_config.d/jupyter_remote_qgis_proxy.json'],
         ),
         (
             'etc/jupyter/jupyter_notebook_config.d',
-            [
-                'jupyter-config/jupyter_notebook_config.d/jupyter_remote_qgis_proxy.json'
-            ],
+            ['jupyter-config/jupyter_notebook_config.d/jupyter_remote_qgis_proxy.json'],
         ),
         (
             'etc/jupyter/jupyter_remote_qgis_proxy.d',
             [
                 'jupyter_remote_qgis_proxy/qgis/scripts/maximize.py',
-            ]
-        )
+            ],
+        ),
     ],
 )
