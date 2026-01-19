@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="3.36.2-Maidenhead">
+<qgis projectname="" version="3.44.6-Solothurn">
   <layer-tree-group>
     <layer-tree-layer id="{layer_id}" source="{layer_src}">
     </layer-tree-layer>

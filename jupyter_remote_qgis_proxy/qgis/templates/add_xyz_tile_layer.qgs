@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="3.36.2-Maidenhead">
+<qgis projectname="" version="3.44.6-Solothurn">
   <layer-tree-group>
     <layer-tree-layer patch_size="-1,-1" source="{layer_src}" checked="Qt::Checked" expanded="1" name="{layer_name}" legend_exp="" legend_split_behavior="0" id="{layer_id}">
       <customproperties>
