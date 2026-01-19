@@ -28,7 +28,9 @@ def open_qgis(action="add_vector_layer", **kwargs):
     with open(f"{current_file_path}/templates/{action}.qgs") as f:
         action_template = f.read()
     project_name = kwargs.get("project_name", "new project")
-    file_path = f"/tmp/{project_name}.qgs"
+    qgis_projects_dir = pathlib.Path.home() / "qgis-projects"
+    qgis_projects_dir.mkdir(exist_ok=True)
+    file_path = qgis_projects_dir / f"{project_name}.qgs"
     with open(file_path, "w") as f:
         if action == "add_xyz_tile_layer":
             logger.info(f"XYZ Tile Layer URL: {kwargs['url']}")
@@ -58,5 +60,5 @@ def open_qgis(action="add_vector_layer", **kwargs):
         project_file_content = action_template.format(**layer_args)
         f.write(project_file_content)
     subprocess.Popen(
-        ["qgis", "--nologo", "--project", file_path, "--code", zoom_script_path]
+        ["qgis", "--nologo", "--project", str(file_path), "--code", zoom_script_path]
     )
